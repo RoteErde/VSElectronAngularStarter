@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "electron": "ng build --base-href ./ && electron .",
-    "dev": ".\\node_modules\\.bin\\concurrently \".\\node_modules\\.bin\\ng serve --port 9080 \"  \".\\node_modules\\.bin\\wait-on http-get://localhost:9080 && electron .\" "
+    "dev": ".\\node_modules\\.bin\\concurrently \".\\node_modules\\.bin\\ng serve --port 9080 \"  \".\\node_modules\\.bin\\wait-on http-get://localhost:9080 && .\\node_modules\\.bin\\cross-env isDev=true electron .\" "
   },
   "private": true,
   "dependencies": {
